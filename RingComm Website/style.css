@@ -1,0 +1,86 @@
+/*
+html, body, div {
+    height: 100%;
+
+    width: 100%;
+
+    height: 100vh;
+
+    width: 100vw;
+
+    margin: 0;
+}
+*/
+
+/*
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("_Aerial-credit-AboveSummit-Christopher Harting_0.png");
+}
+*/
+
+div {
+  border-style: dashed;
+  border-color: white;
+}
+
+#welcome {
+  color: #e8b923;
+  font-size: 500%;
+  font-family: bangers;
+}
+
+.front {
+  color: #e8b923;
+  font-size: 250%;
+}
+
+.container {
+    padding:200px 20px 200px 20px;
+    text-align:center;
+    color:#FFF;
+    font-weight:bold;
+    border-width: 1px;
+    border-color: white;
+    border-style: dashed;
+    height: 100%;
+    min-height: 100%;
+    background-color: black;
+    min-width: 100%;
+  }
+
+.section-1 {
+  background-color: red;
+  background: url("https://cdn.vox-cdn.com/thumbor/Pva9IfI08Egn5Ko1cI-ZkVJOZhI=/0x0:1920x1080/920x613/filters:focal(807x387:1113x693):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/63304028/surprise_marvel_releases_a_new_full_trailer_and_poster_for_avengers_endgame_social.0.jpg") no-repeat top center fixed;
+  background-size: cover;
+}
+
+.section-2 {
+  background-color: green;
+}
+
+.header {
+    background: url("http://upload.wikimedia.org/wikipedia/commons/8/86/Jefferson_Park_in_Chicago.JPG") no-repeat top center fixed;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: purple;
+    text-align: center;
+    font-size: 140px;
+    height: 100%;
+    min-height: 100%;
+  }
+
+#welcome_heading {
+    text-align: center;
+    float: left;
+  }
+
+#welcome_writing {
+    float: right;
+    display: inline-block;
+    width: 50%;
+  }
