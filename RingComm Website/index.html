@@ -29,11 +29,21 @@
 
   <body>
     <nav class = "navbar">
-      <a href = "index.html" class = "navbar-text">Home</a>
-      <a href = "index.html" class = "navbar-text">The Ring</a>
-      <a href = "index.html" class = "navbar-text">Purchasing</a>
-      <a href = "index.html">Events</a>
-      <a href = "index.html">FAQs</a>
+      <v-toolbar floating transparent>
+        <v-flex xs0 offset-xs0>
+        </v-flex>
+        <v-spacer></v-spacer>
+        <v-toolbar-items>
+          <v-btn flat class="transparent white--text" color = #f7b733 style="font-size: 1.5em; font-weight: 600;" v-scroll-to="'#history'">HISTORY</v-btn>
+          <v-btn flat class="transparent white--text" style="font-size: 1.5em; font-weight: 600;" v-scroll-to="'#committee'">The Committee</v-btn>
+          <v-btn flat class="transparent white--text" style="font-size: 1.5em; font-weight: 600;"v-scroll-to="'#delivery'"> Delivery </v-btn>
+          <v-btn flat class="transparent white--text" style="font-size: 1.5em; font-weight: 600;"v-scroll-to="'#ring'"> The Ring </v-btn>
+          <v-btn flat class="transparent white--text" style="font-size: 1.5em; font-weight: 600;"v-scroll-to="'#purch'"> Purchasing </v-btn>
+
+          <v-btn flat class="transparent white--text" style="font-size: 1.5em; font-weight: 600;" v-scroll-to="'#contact'">Contact</v-btn>
+          <v-btn flat class="transparent white--text" style="font-size: 1.5em; font-weight: 600;" v-scroll-to="'#faq'">FAQ</v-btn>
+        </v-toolbar-items>
+      </v-toolbar>
     </nav>
 
     <header>
