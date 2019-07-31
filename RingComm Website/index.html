@@ -3,8 +3,12 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="style.css" rel="stylesheet">
+
+    <!-- Font setup -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
     <!-- Favicon setup -->
     <!--
@@ -23,37 +27,25 @@
 
     </script>
     <title>Brass Rat 2022</title>
-    <style>
-    </style>
   </head>
 
   <body>
-    <nav class = "navbar">
-      <v-toolbar floating transparent>
-        <v-flex xs0 offset-xs0>
-        </v-flex>
-        <v-spacer></v-spacer>
-        <v-toolbar-items>
-          <v-btn flat class="transparent white--text" color = #f7b733 style="font-size: 1.5em; font-weight: 600;" v-scroll-to="'#history'">HISTORY</v-btn>
-          <v-btn flat class="transparent white--text" style="font-size: 1.5em; font-weight: 600;" v-scroll-to="'#committee'">The Committee</v-btn>
-          <v-btn flat class="transparent white--text" style="font-size: 1.5em; font-weight: 600;"v-scroll-to="'#delivery'"> Delivery </v-btn>
-          <v-btn flat class="transparent white--text" style="font-size: 1.5em; font-weight: 600;"v-scroll-to="'#ring'"> The Ring </v-btn>
-          <v-btn flat class="transparent white--text" style="font-size: 1.5em; font-weight: 600;"v-scroll-to="'#purch'"> Purchasing </v-btn>
-
-          <v-btn flat class="transparent white--text" style="font-size: 1.5em; font-weight: 600;" v-scroll-to="'#contact'">Contact</v-btn>
-          <v-btn flat class="transparent white--text" style="font-size: 1.5em; font-weight: 600;" v-scroll-to="'#faq'">FAQ</v-btn>
-        </v-toolbar-items>
-      </v-toolbar>
-    </nav>
+    <div class = "navbar">
+      <a class = "navbar-link" href = "style.css"> The Ring </a>
+      <a class = "navbar-link" href = "style.css"> Purchasing </a>
+      <a class = "current-link" href = "index.html"> Home </a>
+      <a class = "navbar-link" href = "style.css"> Events </a>
+      <a class = "navbar-link" href = "style.css"> FAQs </a>
+    </div>
 
     <header>
       <p style = "color: #e8b923;"></p>
     </header>
 
-    <div class = "container section-1">
-      <div id = "welcome">
-        Welcome
-      </div>
+    <div class = "container">
+      <span class = "section-heading"> Welcome </span>
+      <div class = "underline" style = "width: 250px;"></div>
+
       <img src = "tim-the-beaver-1.png"/>
       <div id = "welcome-writing">
         <p>Some prose about the Ring and its history, lol</p>
@@ -61,12 +53,22 @@
     </div>
 
     <div class = "container committee">
-      Meet the Committee
+      <span class = "section-heading committee"> Meet the committee </span>
+      <div class = "underline" style = "width: 250px;"></div>
+
         <div class = "picture-row">
           <div class = "containera">
             <img src="id.png" height= "100%", style="float:left;"/>
             <div class = "overlay" style = "color:black; background:white;">
-              lol Testing
+              <div class = "member-name">Brian Hoh</div>
+              <div class = "underline" style="margin-bottom: 20px;"></div>
+              <div class = "member-info">
+                <h4><span class="mini_title">ROLE:</span> Web Developer </h4>
+                <h4><span class="mini_title">HOMETOWN:</span> Chula Vista, CA </h4>
+                <h4><span class="mini_title">COURSE:</span> 16 </h4>
+                <h4><span class="mini_title">RESIDENCE:</span> Beta Theta Pi </h4>
+                <h4><span class="mini_title">AFFILIATION:</span> Beta Theta Pi </h4>
+              </div>
             </div>
           </div>
 
@@ -91,18 +93,10 @@
             </div>
           </div>
         </div>
-    </div>
-
-    <div class = "container">
-      <div>
-        <div style = "border-style:ridge;border-width:15px; border-color:red;">
-          Testing
-        </div>
-      </div>
     </div>
 
     <footer>
-      Brass Rat 2020
+      Brass Rat 2022
     </footer>
 
     <!-- Optional JavaScript -->
