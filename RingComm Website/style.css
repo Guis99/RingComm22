@@ -22,6 +22,7 @@ body {
 
 * {
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 div {
@@ -29,14 +30,12 @@ div {
 
 #welcome {
   font-size: 400%;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar {
   color: white;
   background-color: black;
   font-size: 30px;
-  font-family: 'Montserrat', sans-serif;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -45,6 +44,7 @@ div {
   overflow: auto;
   text-align: center;
   width: 100%;
+  z-index: 1;
 }
 
 .navbar a {
@@ -113,29 +113,23 @@ header {
 
 .section-heading {
   font-size: 400%;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .committee {
   color: white;
 }
 
-  .picture-row {
-      display: flex;
-      margin-bottom: -5px;
-      overflow: hidden;
-  }
-
-  .picture-row > div {
-      flex:1;
+.picture-row {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
 }
 
 .containera {
   position: relative;
-  width: 25%;
   float: left;
   font-weight: 900;
-  max-height: 200px;
 }
 
 .containeraa {
@@ -149,18 +143,16 @@ header {
     font-weight: 900;
 }
 
-.containera:hover .overlay {
+.containera:hover .member-card {
   opacity: .8;
 }
 
-.overlay {
+.member-card {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  margin: 0;
   right: 0;
-  height: 100%;
   opacity: 0;
   box-sizing: border-box;
   transition: .5s ease;
@@ -169,7 +161,6 @@ header {
   border-style: solid;
   border-color: #CCCCCC;
   border-width: 10px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .containera:hover .img_text{
@@ -188,6 +179,15 @@ header {
 .member-info {
   color: black;
   font-weight: 150;
+  font-size: 90%;
+}
+
+.middle-text {
+  font-size: 450%;
+  border-color: gold;
+  border-style: solid;
+  min-width: 895px;
+  vertical-align: middle;
 }
 
 footer {
@@ -199,8 +199,6 @@ footer {
   position: sticky;
   bottom: 0;
   z-index: -1;
-  font-family: 'Montserrat', sans-serif;
-}
 }
 
 #welcome-writing {
@@ -212,5 +210,4 @@ footer {
   height: 3px;
   background: rgba(202, 179, 64, 1);
   margin: 0px auto 50px;
-  border:
 }
