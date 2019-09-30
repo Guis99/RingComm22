@@ -121,15 +121,18 @@ header {
 
 .picture-row {
   display: grid;
-  grid-template-columns: repeat(5, minmax(100px, 1fr));
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-column-gap: 3.8vw;
+  grid-row-gap: 5vh;
+  padding: 0px 4vw 0px 4vw;
 }
 
 .containera {
   position: relative;
   float: left;
   font-weight: 900;
+  max-width: 500px;
+  max-height: 200px;
 }
 
 .containeraa {
@@ -160,7 +163,9 @@ header {
   background-color: rgba(0, 0, 0, 0.1);
   border-style: solid;
   border-color: #CCCCCC;
+  max-height: 14vw;
   border-width: 10px;
+  font-size: 1vw;
 }
 
 .containera:hover .img_text{
@@ -168,7 +173,7 @@ header {
 }
 
 .member-name {
-    font-size: 175%;
+    font-size: 125%;
 }
 
 .mini_title {
@@ -206,7 +211,7 @@ footer {
 }
 
 .underline {
-  width: 162px;
+  width: 10vw;
   height: 3px;
   background: rgba(202, 179, 64, 1);
   margin: 0px auto 50px;
