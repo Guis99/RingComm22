@@ -22,7 +22,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 div {
@@ -64,7 +64,8 @@ div {
 
 .navbar-link {
   padding: 12px;
-  font-size: 17px
+  font-size: 21px;
+  font-weight: 2000;
 }
 
 .current-link {
@@ -87,7 +88,7 @@ a, a:visited, a:hover, a:active {
   min-height: 100%;
   background-color: white;
   min-width: 100%;
-  padding-top: 500px;
+  padding: 90px 0px 50px 0px;
 }
 
 .section-1 {
@@ -100,7 +101,7 @@ a, a:visited, a:hover, a:active {
 }
 
 header {
-    background: url("MIT-Dome-3.PNG") no-repeat top center fixed;
+    background: url("MIT-Dome-3.png") no-repeat top center fixed;
     background-size: cover;
     padding:300px 20px 900px 20px;
     width: 100%;
@@ -113,6 +114,17 @@ header {
 
 .section-heading {
   font-size: 400%;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.welcome-heading {
+  font-size: 200%
+}
+
+.opening-paragraphs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
 }
 
 .committee {
@@ -161,7 +173,7 @@ header {
   transition: .5s ease;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.1);
-  border-style: solid;
+  border-style: inset;
   border-color: #CCCCCC;
   max-height: 14vw;
   border-width: 10px;
@@ -173,18 +185,21 @@ header {
 }
 
 .member-name {
-    font-size: 125%;
+    font-size: 150%;
+    font-weight: 1500;
 }
 
 .mini_title {
-  padding: 10px;
-  color: #e8b923;
+  padding: 1px;
+  color: black;
+  font-weight: 900;
 }
 
 .member-info {
   color: black;
-  font-weight: 150;
-  font-size: 90%;
+  font-weight: 400;
+  font-size: 100%;
+
 }
 
 .middle-text {
@@ -206,13 +221,43 @@ footer {
   z-index: -1;
 }
 
-#welcome-writing {
-  float: right;
+.welcome-writing {
+  max-width: 30vw;
+  font-weight: 500;
 }
 
 .underline {
   width: 10vw;
-  height: 3px;
+  height: 1px;
   background: rgba(202, 179, 64, 1);
   margin: 0px auto 50px;
+  border-color: rgba(202, 179, 64, 1);
+  border-width: 2px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (min-width: 80vw) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.navbar .icon {
+  display: none;
 }

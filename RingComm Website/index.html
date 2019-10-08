@@ -8,8 +8,8 @@
     <link href="style.css" rel="stylesheet">
 
     <!-- Font setup -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Red+Hat+Text|Raleway&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Montserrat|Muli|Open+Sans|Source+Sans+Pro&display=swap" rel="stylesheet">
     <!-- Favicon setup -->
     <!--
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -22,6 +22,14 @@
     <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
 		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src = "script.js"></script>
 
@@ -31,28 +39,90 @@
 
   <body>
     <div class = "navbar">
+      <a class = "navbar-link" href = "placeholder.html"> Home </a>
       <a class = "navbar-link" href = "style.css"> The Ring </a>
-      <a class = "navbar-link" href = "style.css"> Purchasing </a>
-      <a class = "current-link" href = "index.html"> Home </a>
-      <a class = "navbar-link" href = "style.css"> Events </a>
-      <a class = "navbar-link" href = "style.css"> FAQs </a>
+      <a class = "navbar-link" href = "placeholder.html"> Purchasing </a>
+      <a class = "navbar-link" href = "placeholder.html"> Events </a>
+      <a class = "navbar-link" href = "placeholder.html"> FAQs </a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
     <header>
     </header>
 
     <div class = "container">
-      <span class = "section-heading"> Welcome </span>
+      <span class = "section-heading"> WELCOME </span>
       <div class = "underline" style = "width: 250px;"></div>
+      <div>
+        <div class="col-sm-4">
+          <div class = "welcome-heading">BEGINNINGS</div>
+          <div class = "underline"></div>
+          The Massachusetts Institute of Technology Brass Rat tradition was born
+          in the spring of 1929. C. Brigham Allen, then President of the Class of 1929,
+          called upon one member of the classes of 1930, 1931, and 1932 and entrusted
+          them with the task of designing a ring that the Institute Committee would
+          ultimately approve as the Standard Technology Ring. The committee agreed upon
+          a three part construction, with a primary image on the bezel of the ring and
+          two other images on the two shanks.
+        </div>
 
-      <img src = "tim-the-beaver-1.png"/>
-      <div id = "welcome-writing">
-        <p>Some prose about the Ring and its history, lol</p>
+        <div class ="col-sm-4">
+          <div class = "welcome-heading">DEFENSE</div>
+          <div class = "underline"></div>
+           <p>Controversy quickly arose over whether to honor the Beaver or the Great Dome
+           on the bezel; some members of the committee even questioned MIT's choice of
+           the beaver as its mascot. The committee looked to the original discussion over
+           the mascot (formally decided upon by President MacLaurin in 1914), calling upon
+           the now famous defense of the beaver by Lester Gardner, Class of 1897: </p>
+
+          <p style = "font-style: italic; font-size: 90%; padding: 20px 0px 20px 0px;">  "The beaver not only typifies the Tech (student), but his habits are peculiarly
+            our own. The beaver is noted for his engineering, mechanical skills, and industry.
+            His habits are nocturnal. He does his best work in the dark." </p>
+
+          <p>Citing the fact that many other schools had buildings similar to our Great Dome,
+          the committee ultimately decided to honor our hard-working and industrious mascot
+          on the ring and thus the Brass Rat was born. With the debate settled and the ring
+          finally designed, the Class of 1930 was the first to proudly wear a Brass Rat.</p>
+        </div>
+
+        <div class = "col-sm-4">
+          <div class = "welcome-heading">TRADITION</div>
+          <div class = "underline"></div>
+           So started the Institute tradition of the Brass Rat, the affectionate nickname for
+           the ring that has become a symbol of MIT as well as one of the most recognizable
+           rings worldwide. Ever since, each class has appointed its own Ring Committee, which
+           endeavors to craft a ring that will inspire us while we are here, unite us once we leave,
+           and, above all else, unmistakably symbolize the Massachusetts Institute of Technology.
+        </div>
       </div>
+<!--
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+      </div>
+      <div id="London" class="tabcontent">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+      </div>
+
+      <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+      </div>
+
+      <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+    -->
     </div>
 
+
     <div class = "container committee">
-      <span class = "section-heading committee"> Meet the committee </span>
+      <span class = "section-heading committee"> MEET THE COMMITTEE </span>
       <div class = "underline" style = "width: 250px;"></div>
 
       <div class = 'picture-row'>
@@ -62,10 +132,10 @@
             <div class = "member-name">Ben Dwyer</div>
             <div class = "underline" style="margin-bottom: 20px;"></div>
             <div class = "member-info">
-              <h4><span class="mini_title">ROLE:</span> Vice Delivery Chair </h4>
-              <h4><span class="mini_title">HOMETOWN:</span> Syracuse, NY </h4>
-              <h4><span class="mini_title">COURSE:</span> 2A-15 </h4>
-              <h4><span class="mini_title">RESIDENCE:</span> DKE </h4>
+              <p><span class="mini_title">ROLE:</span> Vice Delivery Chair </p>
+              <p><span class="mini_title">HOMETOWN:</span> Syracuse, NY </p>
+              <p><span class="mini_title">COURSE:</span> 2A-15 </p>
+              <p><span class="mini_title">RESIDENCE:</span> DKE </p>
             </div>
           </div>
         </div>
@@ -76,10 +146,10 @@
             <div class = "member-name">Ben Wolz</div>
             <div class = "underline" style="margin-bottom: 20px;"></div>
             <div class = "member-info">
-              <h4><span class="mini_title">ROLE:</span> Publicity Chair </h4>
-              <h4><span class="mini_title">HOMETOWN:</span> College Station, TX </h4>
-              <h4><span class="mini_title">COURSE:</span> 6-7 </h4>
-              <h4><span class="mini_title">RESIDENCE:</span> Sigma Chi </h4>
+              <p><span class="mini_title">ROLE:</span> Publicity Chair </p>
+              <p><span class="mini_title">HOMETOWN:</span> College Station, TX </p>
+              <p><span class="mini_title">COURSE:</span> 6-7 </p>
+              <p><span class="mini_title">RESIDENCE:</span> Sigma Chi </p>
             </div>
           </div>
         </div>
@@ -90,10 +160,10 @@
             <div class = "member-name">Dolapo Adedokun</div>
             <div class = "underline" style="margin-bottom: 20px;"></div>
             <div class = "member-info">
-              <h4><span class="mini_title">ROLE:</span> Treasurer </h4>
-              <h4><span class="mini_title">HOMETOWN:</span> East Brunswick, NJ </h4>
-              <h4><span class="mini_title">COURSE:</span> 18C </h4>
-              <h4><span class="mini_title">RESIDENCE:</span> New House </h4>
+              <p><span class="mini_title">ROLE:</span> Treasurer </p>
+              <p><span class="mini_title">HOMETOWN:</span> East Brunswick, NJ </p>
+              <p><span class="mini_title">COURSE:</span> 18C </p>
+              <p><span class="mini_title">RESIDENCE:</span> New House </p>
             </div>
           </div>
         </div>
@@ -104,10 +174,10 @@
             <div class = "member-name">Eleanor Xiao</div>
             <div class = "underline" style="margin-bottom: 20px;"></div>
             <div class = "member-info">
-              <h4><span class="mini_title">ROLE:</span> Ring Premiere Chair </h4>
-              <h4><span class="mini_title">HOMETOWN:</span>Los Altos, CA </h4>
-              <h4><span class="mini_title">COURSE:</span> 20 </h4>
-              <h4><span class="mini_title">RESIDENCE:</span> Kappa Alpha Theta </h4>
+              <p><span class="mini_title">ROLE:</span> Ring Premiere Chair </p>
+              <p><span class="mini_title">HOMETOWN:</span>Los Altos, CA </p>
+              <p><span class="mini_title">COURSE:</span> 20 </p>
+              <p><span class="mini_title">RESIDENCE:</span> Kappa Alpha Theta </p>
             </div>
           </div>
         </div>
@@ -118,11 +188,11 @@
             <div class = "member-name">Julia Chatterjee</div>
             <div class = "underline" style="margin-bottom: 20px;"></div>
             <div class = "member-info">
-              <h4><span class="mini_title">ROLE:</span> Study Break Chair </h4>
-              <h4><span class="mini_title">HOMETOWN:</span> Hinsdale, IL </h4>
-              <h4><span class="mini_title">COURSE:</span> 2 </h4>
-              <h4><span class="mini_title">RESIDENCE:</span> Burton 1 </h4>
-              <h4><span class="mini_title">AFFILIATION:</span> Alpha Pu </h4>
+              <p><span class="mini_title">ROLE:</span> Study Break Chair </p>
+              <p><span class="mini_title">HOMETOWN:</span> Hinsdale, IL </p>
+              <p><span class="mini_title">COURSE:</span> 2 </p>
+              <p><span class="mini_title">RESIDENCE:</span> Burton 1 </p>
+              <p><span class="mini_title">AFFILIATION:</span> Alpha Phi </p>
             </div>
           </div>
         </div>
@@ -133,11 +203,10 @@
             <div class = "member-name">Brian Hoh</div>
             <div class = "underline" style="margin-bottom: 20px;"></div>
             <div class = "member-info">
-              <h4><span class="mini_title">ROLE:</span> Web Developer </h4>
-              <h4><span class="mini_title">HOMETOWN:</span> Chula Vista, CA </h4>
-              <h4><span class="mini_title">COURSE:</span> 16 and 6-3 minor </h4>
-              <h4><span class="mini_title">RESIDENCE:</span> Beta Theta Pi </h4>
-              <h4><span class="mini_title">AFFILIATION:</span> Beta Theta Pi </h4>
+              <p><span class="mini_title">ROLE:</span> Web Developer </p>
+              <p><span class="mini_title">HOMETOWN:</span> Chula Vista, CA </p>
+              <p><span class="mini_title">COURSE:</span> 16 </p>
+              <p><span class="mini_title">RESIDENCE:</span> Beta Theta Pi </p>
             </div>
           </div>
         </div>
@@ -148,10 +217,10 @@
             <div class = "member-name">Victor Perez-Ramirez</div>
             <div class = "underline" style="margin-bottom: 20px;"></div>
             <div class = "member-info">
-              <h4><span class="mini_title">ROLE:</span> Delivery Chair </h4>
-              <h4><span class="mini_title">HOMETOWN:</span> Pembroke Pines, FL </h4>
-              <h4><span class="mini_title">COURSE:</span> 16 </h4>
-              <h4><span class="mini_title">RESIDENCE:</span> New House </h4>
+              <p><span class="mini_title">ROLE:</span> Delivery Chair </p>
+              <p><span class="mini_title">HOMETOWN:</span> Pembroke Pines, FL </p>
+              <p><span class="mini_title">COURSE:</span> 16 </p>
+              <p><span class="mini_title">RESIDENCE:</span> New House </p>
             </div>
           </div>
         </div>
@@ -162,11 +231,11 @@
             <div class = "member-name">Erica Liu</div>
             <div class = "underline" style="margin-bottom: 20px;"></div>
             <div class = "member-info">
-              <h4><span class="mini_title">ROLE:</span> Artist and Ring Premiere Vice Chair </h4>
-              <h4><span class="mini_title">HOMETOWN:</span> Sunnyvale, CA </h4>
-              <h4><span class="mini_title">COURSE:</span> 16 </h4>
-              <h4><span class="mini_title">RESIDENCE:</span> McCormick Hall </h4>
-              <h4><span class="mini_title">AFFILIATION:</span> Pi Beta Phi </h4>
+              <p><span class="mini_title">ROLE:</span> Artist and Ring Premiere Vice Chair </p>
+              <p><span class="mini_title">HOMETOWN:</span> Sunnyvale, CA </p>
+              <p><span class="mini_title">COURSE:</span> 16 </p>
+              <p><span class="mini_title">RESIDENCE:</span> McCormick Hall </p>
+              <p><span class="mini_title">AFFILIATION:</span> Pi Beta Phi </p>
             </div>
           </div>
         </div>
@@ -177,11 +246,11 @@
             <div class = "member-name">Lara Ketonen</div>
             <div class = "underline" style="margin-bottom: 20px;"></div>
             <div class = "member-info">
-              <h4><span class="mini_title">ROLE:</span> Committee chair </h4>
-              <h4><span class="mini_title">HOMETOWN:</span> Helsinki, Finland </h4>
-              <h4><span class="mini_title">COURSE:</span> 6-3 and Design minor </h4>
-              <h4><span class="mini_title">RESIDENCE:</span> Baker House </h4>
-              <h4><span class="mini_title">AFFILIATION:</span> Sigma Kappa </h4>
+              <p><span class="mini_title">ROLE:</span> Committee chair </p>
+              <p><span class="mini_title">HOMETOWN:</span> Helsinki, Finland </p>
+              <p><span class="mini_title">COURSE:</span> 6-3 and Design minor </p>
+              <p><span class="mini_title">RESIDENCE:</span> Baker House </p>
+              <p><span class="mini_title">AFFILIATION:</span> Sigma Kappa </p>
             </div>
           </div>
         </div>
@@ -192,52 +261,49 @@
             <div class = "member-name">Natasha Hirt</div>
             <div class = "underline" style="margin-bottom: 20px;"></div>
             <div class = "member-info">
-              <h4><span class="mini_title">ROLE:</span> Artist </h4>
-              <h4><span class="mini_title">HOMETOWN:</span> Hong Kong </h4>
-              <h4><span class="mini_title">COURSE:</span> 4 </h4>
-              <h4><span class="mini_title">RESIDENCE:</span> New House </h4>
+              <p><span class="mini_title">ROLE:</span> Artist </p>
+              <p><span class="mini_title">HOMETOWN:</span> Hong Kong </p>
+              <p><span class="mini_title">COURSE:</span> 4 </p>
+              <p><span class="mini_title">RESIDENCE:</span> New House </p>
             </div>
           </div>
         </div>
 
         <div class = "containera"> <!-- Erick info -->
-          <img src="_Aerial-credit-AboveSummit-Christopher Harting_0.png" width = "100%", style="float:left;"/>
+          <img src="Member photos/erick.jpg" width = "100%", style="float:left;"/>
           <div class = "member-card" style = "color:black; background:white;">
             <div class = "member-name">Erick Eguia</div>
             <div class = "underline" style="margin-bottom: 20px;"></div>
             <div class = "member-info">
-              <h4><span class="mini_title">ROLE:</span> Vice Committee Chair </h4>
-              <h4><span class="mini_title">HOMETOWN:</span> Chula Vista, CA </h4>
-              <h4><span class="mini_title">COURSE:</span> 9 </h4>
-              <h4><span class="mini_title">RESIDENCE:</span> Next House </h4>
+              <p><span class="mini_title">ROLE:</span> Vice Committee Chair </p>
+              <p><span class="mini_title">HOMETOWN:</span> Murrieta, CA </p>
+              <p><span class="mini_title">COURSE:</span> 9 </p>
+              <p><span class="mini_title">RESIDENCE:</span> Next House </p>
             </div>
           </div>
-        </div> <!-- Erick info -->
+        </div>
 
         <div class = "containera"> <!-- Katie info -->
-          <img src="_Aerial-credit-AboveSummit-Christopher Harting_0.png" width = "100%", style="float:left;"/>
+          <img src="Member photos/katie.jpg" width = "100%", style="float:left;"/>
           <div class = "member-card" style = "color:black; background:white;">
             <div class = "member-name">Katie Pelton</div>
             <div class = "underline" style="margin-bottom: 20px;"></div>
             <div class = "member-info">
-              <h4><span class="mini_title">ROLE:</span> Web Developer </h4>
-              <h4><span class="mini_title">HOMETOWN:</span> Chula Vista, CA </h4>
-              <h4><span class="mini_title">COURSE:</span> 16 </h4>
-              <h4><span class="mini_title">RESIDENCE:</span> Beta Theta Pi </h4>
-              <h4><span class="mini_title">AFFILIATION:</span> Beta Theta Pi </h4>
+              <p><span class="mini_title">ROLE:</span> Artist/Ring Delivery Vice Chair </p>
+              <p><span class="mini_title">HOMETOWN:</span>Radnor, PA </p>
+              <p><span class="mini_title">COURSE:</span> 11-6 </p>
+              <p><span class="mini_title">RESIDENCE:</span> Alpha Phi </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class = "container">
+      skdfj;sdalfhsvba;jdsbv
+    </div>
     <footer>
       Brass Rat 2022
     </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    </body>
 </html>
