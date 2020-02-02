@@ -1,4 +1,6 @@
 
+/* CSS FOR INDEX.HTML */
+
 * {
   box-sizing: border-box;
   font-family: 'Barlow', sans-serif;
@@ -115,7 +117,7 @@ header {
 
 .picture-row {
   display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-column-gap: 3.2vw;
   grid-row-gap: 4vh;
   padding: 0px 4vw 0px 4vw;
@@ -137,6 +139,9 @@ header {
   color: black;
   font-size: 11px;
   opacity: .8;
+  font-weight: 900;
+  letter-spacing: .4px;
+  transition: .5s ease;
 }
 
 .containera .name {
@@ -145,6 +150,10 @@ header {
 
 .containera:hover .member-card {
   opacity: .8;
+}
+
+.containera:hover .name-badge {
+  opacity: 0;
 }
 
 .member-card {
@@ -160,12 +169,11 @@ header {
   background-color: rgba(0, 0, 0, 0.1);
   border-style: inset;
   border-color: #CCCCCC;
-  border-width: .65vw;
-  font-size: .8vw;
-}
-
-.containera:hover .img_text{
-    opacity: 0;
+  border-width: 1.2vh;
+  font-size: 1.5vh;
+  color:black;
+  background:white;
+  padding-top: 6%;
 }
 
 .member-name {
@@ -183,7 +191,9 @@ header {
   color: black;
   font-weight: 400;
   font-size: 100%;
-
+  position: relative;
+  margin-top: 7.5%;
+  letter-spacing: 1px;
 }
 
 .middle-text {
@@ -194,9 +204,34 @@ header {
   vertical-align: middle;
 }
 
-.footer {
+#faq {
+  color: black;
+  padding-top: 40px;
+}
+
+.faq-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-column-gap: 3.2vw;
+  grid-row-gap: 10vh;
+  padding: 0px 4vw 0px 4vw;
+}
+
+.question {
+  letter-spacing: 1.5px;
+  font-size: 110%;
+}
+
+.answer {
+  position: relative;
+  float: left;
+  padding: 40px 0px 40px 0px;
+  border: 1px dashed black;
+}
+
+footer {
   padding:30px 20px 45px 20px;
-  background-color: white;
+  background-color: #C0C0C0;
   text-align: center;
   font-size: 30px;
   bottom: 0;
@@ -211,11 +246,6 @@ header {
   text-decoration: none;
   color: black;
   z-index: 2;
-}
-
-.welcome-writing {
-  max-width: 30vw;
-  font-weight: 500;
 }
 
 .underline {
@@ -239,4 +269,10 @@ a.fa-facebook:hover {
 a.fa-instagram:hover {
   text-decoration: none;
   color: #bc2a8d;
+}
+
+/* CSS FOR RING.HTML */
+
+#purchasing {
+  background-color: black;
 }
