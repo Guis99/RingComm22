@@ -11,14 +11,8 @@
     <!-- Font setup -->
 
     <link href="https://fonts.googleapis.com/css?family=Barlow|Montserrat|Muli|Open+Sans|Source+Sans+Pro&display=swap" rel="stylesheet">
-    <!-- Favicon setup -->
-    <!--
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    -->
-    <link rel="shortcut icon" type="image/x-icon" href="/Ringlogo.ico">
+
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,17 +33,27 @@
       <a class = "navbar-link" href = "ring.html"> The Ring </a>
       <a class = "navbar-link" href = "ring.html#purchasing"> Purchasing </a>
       <a class = "current-link" href = "index.html"> Home </a>
-      <a class = "navbar-link" href = "placeholder.html"> Events </a>
+      <a class = "navbar-link" href = "events.html"> Events </a>
       <a class = "navbar-link" href = "#faq"> FAQs </a>
     </div>
 
     <header>
     </header>
 
-    <div class = 'container'>
-      <span class = 'section-heading'>Hello</span>
-      sample text <br>
-      the brass rat is a tradition
+    <div class = 'container' id = 'intro'>
+      <span class = 'section-heading' style = 'font-size: 650%; letter-spacing: 3px;'>WELCOME</span>
+      <div class = 'intro-organizer'>
+        <div class = 'video-holder'>
+          <video width="100%" playsinline autoplay muted loop>
+            <source src="BrassRatAnimation.mp4" type="video/mp4">
+            <source src="BrassRatAnimation.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class = 'video-holder'>
+          test
+        </div>
+      </div>
     </div>
 
     <div class = "container">
@@ -105,13 +109,15 @@
 
       <div class = 'picture-row'>
 
-        <div class = "containera" style = "background: url('Member photos/lara.jpg') no-repeat; background-size: contain; position: relative"> <!-- Lara info -->
-
+        <div class = "containera"> <!-- Lara info -->
           <div class = "name-badge">
-            LARA KETONEN <br> COMMITTEE CHAIR
+            LARA KETONEN
           </div>
+          <img src="Member photos/lara.jpg" width = "100%", style="float:left;"/>
           <div class = "member-card">
-            <div class = "member-info" style = 'letter-spacing: 1px;'>
+            <div class = "member-role">Committee Chair</div>
+            <div class = "underline" style="margin-bottom: .2vh;"></div>
+            <div class = "member-info">
               <p><span class="mini_title">HOMETOWN:</span> Helsinki, Finland </p>
               <p><span class="mini_title">COURSE:</span> 6-3 and Design minor </p>
               <p><span class="mini_title">RESIDENCE:</span> Baker House </p>
@@ -121,12 +127,14 @@
         </div>
 
         <div class = "containera"> <!-- Erick info -->
+          <div class = "name-badge">
+            ERICK EGUIA
+          </div>
           <img src="Member photos/erick.jpg" width = "100%", style="float:left;"/>
           <div class = "member-card" style = "color:black; background:white;">
-            <div class = "member-name">Erick Eguia</div>
+            <div class = "member-role">Vice Committee Chair</div>
             <div class = "underline" style="margin-bottom: .2vh;"></div>
             <div class = "member-info">
-              <p><span class="mini_title">ROLE:</span> Vice Committee Chair </p>
               <p><span class="mini_title">HOMETOWN:</span> Murrieta, CA </p>
               <p><span class="mini_title">COURSE:</span> 9 </p>
               <p><span class="mini_title">RESIDENCE:</span> Next House </p>
@@ -135,12 +143,14 @@
         </div>
 
         <div class = "containera"> <!-- Victor info -->
+          <div class = "name-badge">
+            VICTOR PEREZ-RAMIREZ
+          </div>
           <img src="Member photos/victor.jpeg" width = "100%", style="float:left;"/>
           <div class = "member-card" style = "color:black; background:white;">
-            <div class = "member-name">Victor Perez-Ramirez</div>
+            <div class = "member-role">Delivery Chair</div>
             <div class = "underline" style="margin-bottom: .2vh;"></div>
             <div class = "member-info">
-              <p><span class="mini_title">ROLE:</span> Delivery Chair </p>
               <p><span class="mini_title">HOMETOWN:</span> Pembroke Pines, FL </p>
               <p><span class="mini_title">COURSE:</span> 16 </p>
               <p><span class="mini_title">RESIDENCE:</span> New House </p>
@@ -149,12 +159,14 @@
         </div>
 
         <div class = "containera"> <!-- Eleanor info -->
+          <div class = "name-badge">
+            ELEANOR XIAO
+          </div>
           <img src="Member photos/eleanor.jpg" width = "100%", style="float:left;"/>
           <div class = "member-card" style = "color:black; background:white;">
-            <div class = "member-name">Eleanor Xiao</div>
+            <div class = "member-role">Premiere Chair</div>
             <div class = "underline" style="margin-bottom: .2vh;"></div>
             <div class = "member-info">
-              <p><span class="mini_title">ROLE:</span> Ring Premiere Chair </p>
               <p><span class="mini_title">HOMETOWN:</span>Los Altos, CA </p>
               <p><span class="mini_title">COURSE:</span> 20 </p>
               <p><span class="mini_title">RESIDENCE:</span> Kappa Alpha Theta </p>
@@ -163,12 +175,14 @@
         </div>
 
         <div class = "containera"> <!-- Ben D info -->
+          <div class = "name-badge">
+            BEN DWYER
+          </div>
           <img src="Member photos/bend.jpeg", width = "100%", style="float:left;"/>
           <div class = "member-card" style = "color:black; background:white;">
-            <div class = "member-name">Ben Dwyer</div>
+            <div class = "member-role">Vice Delivery Chair</div>
             <div class = "underline" style="margin-bottom: .2vh;"></div>
             <div class = "member-info">
-              <p><span class="mini_title">ROLE:</span> Vice Delivery Chair </p>
               <p><span class="mini_title">HOMETOWN:</span> Syracuse, NY </p>
               <p><span class="mini_title">COURSE:</span> 2A-15 </p>
               <p><span class="mini_title">RESIDENCE:</span> DKE </p>
@@ -177,12 +191,14 @@
         </div>
 
         <div class = "containera"> <!-- Ben W info -->
+          <div class = "name-badge">
+            BEN WOLZ
+          </div>
           <img src="Member photos/benw.jpg" width = "100%", style="float:left;"/>
           <div class = "member-card" style = "color:black; background:white;">
-            <div class = "member-name">Ben Wolz</div>
+            <div class = "member-role">Publicity Chair</div>
             <div class = "underline" style="margin-bottom: .2vh;"></div>
             <div class = "member-info">
-              <p><span class="mini_title">ROLE:</span> Publicity Chair </p>
               <p><span class="mini_title">HOMETOWN:</span> College Station, TX </p>
               <p><span class="mini_title">COURSE:</span> 6-7 </p>
               <p><span class="mini_title">RESIDENCE:</span> Sigma Chi </p>
@@ -191,12 +207,14 @@
         </div>
 
         <div class = "containera"> <!-- Dolapo info -->
+          <div class = "name-badge">
+            DOLAPO ADEDOKUN
+          </div>
           <img src="Member photos/dolapo.jpg" width = "100%", style="float:left;"/>
           <div class = "member-card" style = "color:black; background:white;">
-            <div class = "member-name">Dolapo Adedokun</div>
+            <div class = "member-role">Treasurer</div>
             <div class = "underline" style="margin-bottom: .2vh;"></div>
             <div class = "member-info">
-              <p><span class="mini_title">ROLE:</span> Treasurer </p>
               <p><span class="mini_title">HOMETOWN:</span> East Brunswick, NJ </p>
               <p><span class="mini_title">COURSE:</span> 18C </p>
               <p><span class="mini_title">RESIDENCE:</span> New House </p>
@@ -205,12 +223,14 @@
         </div>
 
         <div class = "containera"> <!-- Julia info -->
+          <div class = "name-badge">
+            JULIA CHATTERJEE
+          </div>
           <img src="Member photos/julia.jpg" width = "100%", style="float:left;"/>
           <div class = "member-card" style = "color:black; background:white;">
-            <div class = "member-name">Julia Chatterjee</div>
+            <div class = "member-role">Study Break Chair</div>
             <div class = "underline" style="margin-bottom: .2vh;"></div>
             <div class = "member-info">
-              <p><span class="mini_title">ROLE:</span> Study Break Chair </p>
               <p><span class="mini_title">HOMETOWN:</span> Hinsdale, IL </p>
               <p><span class="mini_title">COURSE:</span> 2 </p>
               <p><span class="mini_title">RESIDENCE:</span> Burton 1 </p>
@@ -220,12 +240,14 @@
         </div>
 
         <div class = "containera"> <!-- Brian info -->
+          <div class = "name-badge">
+            BRIAN HOH
+          </div>
           <img src="Member photos/brian.jpg" width = "100%", style="float:left;"/>
           <div class = "member-card" style = "color:black; background:white;">
-            <div class = "member-name">Brian Hoh</div>
+            <div class = "member-role">Web Developer</div>
             <div class = "underline" style="margin-bottom: .2vh;"></div>
             <div class = "member-info">
-              <p><span class="mini_title">ROLE:</span> Web Developer </p>
               <p><span class="mini_title">HOMETOWN:</span> Chula Vista, CA </p>
               <p><span class="mini_title">COURSE:</span> 16 </p>
               <p><span class="mini_title">RESIDENCE:</span> Beta Theta Pi </p>
@@ -234,12 +256,14 @@
         </div>
 
         <div class = "containera"> <!-- Erica info -->
+          <div class = "name-badge">
+            ERICA LIU
+          </div>
           <img src="Member photos/erica.png" width = "100%", style="float:left;"/>
           <div class = "member-card" style = "color:black; background:white;">
-            <div class = "member-name">Erica Liu</div>
+            <div class = "member-role">Premiere Vice Chair/Artist</div>
             <div class = "underline" style="margin-bottom: .2vh;"></div>
             <div class = "member-info">
-              <p><span class="mini_title">ROLE:</span> Artist and Ring Premiere Vice Chair </p>
               <p><span class="mini_title">HOMETOWN:</span> Sunnyvale, CA </p>
               <p><span class="mini_title">COURSE:</span> 4 </p>
               <p><span class="mini_title">RESIDENCE:</span> McCormick Hall </p>
@@ -249,12 +273,14 @@
         </div>
 
         <div class = "containera"> <!-- Natasha info -->
+          <div class = "name-badge">
+            NATASHA HIRT
+          </div>
           <img src="Member photos/natasha.jpg" width = "100%", style="float:left;"/>
           <div class = "member-card" style = "color:black; background:white;">
-            <div class = "member-name">Natasha Hirt</div>
+            <div class = "member-role">Artist</div>
             <div class = "underline" style="margin-bottom: .2vh;"></div>
             <div class = "member-info">
-              <p><span class="mini_title">ROLE:</span> Artist </p>
               <p><span class="mini_title">HOMETOWN:</span> Hong Kong </p>
               <p><span class="mini_title">COURSE:</span> 4 </p>
               <p><span class="mini_title">RESIDENCE:</span> New House </p>
@@ -263,12 +289,14 @@
         </div>
 
         <div class = "containera"> <!-- Katie info -->
+          <div class = "name-badge">
+            KATIE PELTON
+          </div>
           <img src="Member photos/katie.jpg" width = "100%", style="float:left;"/>
           <div class = "member-card" style = "color:black; background:white;">
-            <div class = "member-name">Katie Pelton</div>
+            <div class = "member-role">Vice Delivery Chair/Artist</div>
             <div class = "underline" style="margin-bottom: .2vh;"></div>
             <div class = "member-info">
-              <p><span class="mini_title">ROLE:</span> Artist/Ring Delivery Vice Chair </p>
               <p><span class="mini_title">HOMETOWN:</span>Radnor, PA </p>
               <p><span class="mini_title">COURSE:</span> 11-6 </p>
               <p><span class="mini_title">RESIDENCE:</span> Alpha Phi </p>
@@ -298,11 +326,11 @@
         </div>
         <div class = 'answer'>
           <p class = 'question'>WHEN AND WHERE WILL RING DELIVERY BE HELD?</p>
-           That's a secret :)
+           That's a secret :)  (for now)
         </div>
         <div class = 'answer'>
           <p class = 'question'>HOW CAN I PURCHASE A BRASS RAT?</p>
-           Placeholder text lmao
+           All information regarding ordering can be found <a href = 'ring.html#purchasing' style = 'color: #e8b923;'>here</a>!
         </div>
         <div class = 'answer'>
           <p class = 'question'>FURTHER QUESTIONS AND COMMENTS?</p>
@@ -315,6 +343,7 @@
       RingComm 2022 <br>
       <a href="https://www.facebook.com/brassrat2022/" target="_blank" class="fa fa-facebook"></a>
       <a href="https://www.instagram.com/brassrat2022/" target="_blank" class="fa fa-instagram"></a>
+      <p style = 'font-size: 48%;'> brassrat2022@mit.edu </p>
     </footer>
   </body>
 </html>

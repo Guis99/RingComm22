@@ -6,6 +6,8 @@
   font-family: 'Barlow', sans-serif;
 }
 
+.clear { clear: both; }
+
 div {
 }
 
@@ -20,7 +22,6 @@ p {
 .navbar-1 {
   color: white;
   background-color: black;
-  font-size: 30px;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -38,6 +39,8 @@ p {
   text-align: center;
   color: rgba(202, 179, 64, 1);
   transition: .5s ease;
+  letter-spacing: 1.5px;
+  text-decoration: none;
 }
 
 .navbar-1 a:hover {
@@ -45,16 +48,23 @@ p {
   color: black;
   text-decoration: none;
   font-weight: bolder;
+  border-bottom: black solid 2.5px;
 }
 
 .navbar-link {
   padding: 12px;
-  font-size: 17px;
+  font-size: 110%;
 }
 
 .current-link {
   padding: 5px;
   color: #e8b923;
+  font-size: 175%;
+  border-bottom: #e8b923 solid 2.5px;
+}
+
+.navbar-link:hover ~ .current-link {
+  border-bottom: black;
 }
 
 
@@ -63,11 +73,28 @@ p {
   font-weight:bold;
   border-width: 1px;
   border-color: white;
-  height: 100%;
   min-height: 100%;
   background-color: white;
   min-width: 100%;
   padding: 90px 0px 50px 0px;
+  overflow: auto;
+}
+
+#intro {
+  border-bottom: .1px solid black;
+  padding-top: 50px;
+}
+
+.video-holder {
+  border: black dashed 1px;
+}
+
+.intro-organizer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-column-gap: 3.2vw;
+  grid-row-gap: 7vh;
+  margin-top: 40px;
 }
 
 .section-1 {
@@ -109,6 +136,7 @@ header {
   flex-flow: column;
   flex-grow: 4;
   text-align: center;
+  font-weight: 350;
 }
 
 .committee {
@@ -127,21 +155,24 @@ header {
   position: relative;
   float: left;
   font-weight: 900;
+  background-size: contain;
 }
 
 .name-badge {
   position: absolute;
   bottom: 1.4vw;
-  right: 0vw;
+  right: .0vw;
   width: 120px;
-  padding: 4px;
   background-color: white;
   color: black;
-  font-size: 11px;
-  opacity: .8;
-  font-weight: 900;
+  font-size: 12px;
+  opacity: .9;
+  font-weight: 500;
   letter-spacing: .4px;
   transition: .5s ease;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  padding: 8px 0px 8px 0px;
 }
 
 .containera .name {
@@ -176,9 +207,10 @@ header {
   padding-top: 6%;
 }
 
-.member-name {
-    font-size: 150%;
+.member-role {
+    font-size: 180%;
     font-weight: 1500;
+    letter-spacing: 1px;
 }
 
 .mini_title {
@@ -213,20 +245,22 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-column-gap: 3.2vw;
-  grid-row-gap: 10vh;
+  grid-row-gap: 7vh;
   padding: 0px 4vw 0px 4vw;
 }
 
 .question {
   letter-spacing: 1.5px;
+  margin-bottom: 6vh;
   font-size: 110%;
+  font-weight: 700;
 }
 
 .answer {
   position: relative;
   float: left;
-  padding: 40px 0px 40px 0px;
-  border: 1px dashed black;
+  padding: 40px 30px 40px 30px;
+  font-weight: 300;
 }
 
 footer {
@@ -274,5 +308,115 @@ a.fa-instagram:hover {
 /* CSS FOR RING.HTML */
 
 #purchasing {
+  justify-content: center;
+}
+
+.ring-design {
   background-color: black;
+}
+.ring-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-column-gap: 3.2vw;
+  grid-row-gap: 7vh;
+  padding: 40px 4vw 40px 4vw;
+  border-top: 3px ridge rgba(202, 179, 64, 1);
+}
+
+.ring-section {
+  color: white;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  font-size: 115%;
+}
+
+.ring-section-bezel {
+  max-height: 500px;
+  color: white;
+  font-weight: 450;
+  overflow-y: scroll;
+}
+
+.image {
+  justify-content: center;
+}
+
+@media (min-width: 900px) {
+  .reverse {
+    order:2;
+  }
+  .text {
+    order: 1;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* For mobile phones: */
+  .ring-section-bezel {
+    max-height: 1000px;
+    overflow: hidden;
+  }
+}
+
+.ring-part {
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 250%;
+  padding-bottom: 10px;
+  border-bottom: rgba(202, 179, 64, 1) 1px ridge;
+  max-width: 65%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.purchasing-section {
+  max-width: 600px;
+  border: black dashed 1px;
+  padding: 20px 20px 20px 20px;
+  font-weight: 500;
+}
+
+.p-section-heading {
+  font-size: 200%;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+.time {
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 4px;
+}
+
+table {
+border-collapse: collapse;
+max-width: 100%;
+}
+
+td, th {
+border: 2px solid black;
+align-items: center;
+padding: 20px;
+width: 14%;
+}
+
+th {
+font-weight: 900;
+}
+
+.table-wrapper {
+  max-width: 80%;
+}
+
+/* CSS FOR EVENTS.HTML */
+.delivery {
+  background: url('delivery-poster.png') no-repeat top center fixed;
+  background-size: cover;
+  padding:300px 20px 900px 20px;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: 140px;
+  height: 100%;
+  max-height: 60%;
 }
